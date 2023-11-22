@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="600.0" style="-fx-background-color: #d3faee;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.game2d.HelloController">
+   <Rectangle fx:id="backRectangle" height="220.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0">
+      <fill>
+         <LinearGradient endX="0.01187648456057011">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.8274509906768799" green="0.9803921580314636" blue="0.9333333373069763" />
+                  </color>
+               </Stop>
+               <Stop offset="0.006711409395973154">
+                  <color>
+                     <Color red="0.8274509906768799" green="0.9803921580314636" blue="0.9333333373069763" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="0.9555869102478027" green="0.9800000190734863" blue="0.8330000042915344" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </fill>
+   </Rectangle>
+   <ImageView fx:id="backgroundImgVw" fitHeight="223.0" fitWidth="600.0" pickOnBounds="true" />
+   <Group fx:id="groupBack" />
+   <ImageView fx:id="charImageView" fitHeight="64.0" fitWidth="48.0" layoutX="14.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true" />
+   <Group fx:id="cactusGroup" />
+   <Rectangle fx:id="grassRectangle" fill="#309e24" height="30.0" layoutY="220.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+   <Label fx:id="lblGameOver" layoutX="225.0" layoutY="107.0" prefHeight="37.0" prefWidth="151.0" text="Game Over" textFill="#ff2f00">
+      <font>
+         <Font name="System Bold Italic" size="30.0" />
+      </font>
+   </Label>
+   <Label fx:id="lblScore" layoutX="417.0" layoutY="24.0" prefHeight="30.0" prefWidth="140.0" text="Label">
+      <font>
+         <Font name="System Bold" size="25.0" />
+      </font>
+   </Label>
+</Pane>
